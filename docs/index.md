@@ -34,4 +34,37 @@ The Data Declaration portion of the script consists of the declaration of variab
 
 Before the variables are declared, however, code is imported from two different sets of files: pickle and os.path. pickle is imported to handle the pickling/unpickling portion of the assignment, whereas os.path enables use of methods later on that pertain to file paths. Figure 1 below shows the importation of these two packages.
 
+![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f01.png)
+
+*Figure 1. Importation of code from other files*
+
+Two variables are declared in the Data Declaration section: fileName and binaryFile. fileName is a string consisting of the name of a txt file containing hypothetical flight parameter data captured by the flight recorder on an airplane during a flight. This data is tabulated with the top row being a header describing the parameters quantified in subsequent rows. This tabulated data can be visualized as seen in Table 1 and Figure 2 below, in table and txt forms.
+
+*Table 1. Tabulated flight data format*
+
+![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/t01.png)
+
+![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f02.png)
+
+*Figure 2. Hypothetical recorded flight data*
+
+binaryFile is a string containing the name of a file that the user may elect to import binary data from or export binary data to. The serialization of data into binary and de-serialization from binary are covered in the Processing section of the script. Figure 3 below shows how the two variables were declared.
+
+![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f03.png)
+
+*Figure 3. Declaration of fileName and binaryFile variables*
+
+## Presentation
+
+The presentation portion of the script consists of the “IO” method class. The methods in this class are fairly similar to those in previous assignments, namely Assignments 06 and 05. These methods either present menus to the user or record user responses to these menus. There are two menus in particular that are displayed to the user: the Main Menu and the Performance Analysis menu. The Main Menu provides the user a list of options (import data, export data, analyze data, or exit) whereas the Performance Analysis Menu is a sub-option of the analyze data option where the user can choose what type of analysis to perform on the data. Due to the similarity to previous assignments, these methods are not discussed here in great detail. Figures 4 and 5 below show the menu display and input retrieval methods for both menus.
+
+![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f04.png)
+
+*Figure 4. Main menu display and user input retrieval methods*
+
+![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f05.png)
+
+*Figure 5. Performance analysis menu display and user input retrieval methods*
+
+## Processing
 
