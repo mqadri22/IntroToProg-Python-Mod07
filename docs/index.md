@@ -42,15 +42,15 @@ Two variables are declared in the Data Declaration section: fileName and binaryF
 
 *Table 1. Tabulated flight data format*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/t01.png)
+![alt text](/images/t01.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f02.png)
+![alt text](/images/f02.png)
 
 *Figure 2. Hypothetical recorded flight data*
 
 binaryFile is a string containing the name of a file that the user may elect to import binary data from or export binary data to. The serialization of data into binary and de-serialization from binary are covered in the Processing section of the script. Figure 3 below shows how the two variables were declared.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f03.png)
+![alt text](/images/f03.png)
 
 *Figure 3. Declaration of fileName and binaryFile variables*
 
@@ -58,11 +58,11 @@ binaryFile is a string containing the name of a file that the user may elect to 
 
 The presentation portion of the script consists of the “IO” method class. The methods in this class are fairly similar to those in previous assignments, namely Assignments 06 and 05. These methods either present menus to the user or record user responses to these menus. There are two menus in particular that are displayed to the user: the Main Menu and the Performance Analysis menu. The Main Menu provides the user a list of options (import data, export data, analyze data, or exit) whereas the Performance Analysis Menu is a sub-option of the analyze data option where the user can choose what type of analysis to perform on the data. Due to the similarity to previous assignments, these methods are not discussed here in great detail. Figures 4 and 5 below show the menu display and input retrieval methods for both menus.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f04.png)
+![alt text](/images/f04.png)
 
 *Figure 4. Main menu display and user input retrieval methods*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f05.png)
+![alt text](/images/f05.png)
 
 *Figure 5. Performance analysis menu display and user input retrieval methods*
 
@@ -72,33 +72,33 @@ The Processing portion of the script consists of the “Processor” class, whic
 
 The loading of data from a text file has been accomplished in previous assignments, and is accomplished similarly here – with the exception of structured error handling being introduced. This and other instances of structured error handling are covered in the Structured Error Handling section below, but at a high level this instance handles errors that could emerge from a specific file not being found where expected. Note that the list being created is of mixed data types, which aids in the analysis of the data later on. Figure 6 below shows the method that handles the loading of data (as formatted in previous images) from a text file.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f06.png)
+![alt text](/images/f06.png)
 
 *Figure 6. Method to load data from a text file into a mixed-data-type list for processing*
 
 Serializing of data into binary format and exporting to a file is accomplished via the exportBinaryData function. This function receives two inputs, the name of a target file and data to be serialized, and then proceeds to serialize the data and then save it to the specified target file. The specific mechanics of the pickling are discussed in the Pickling & Unpickling section below. Figure 7 below shows the method that handles the serialization of data into binary and its saving into data.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f07.png)
+![alt text](/images/f07.png)
 
 *Figure 7. Method for data serialization and export*
 
 De-serialization (i.e., “unpickling”) of binary data and importation into memory is accomplished by the importBinaryData function. This method receives one argument, the name of a binary data file from which to import and de-serialize data from. The details of de-serialization are covered in the Pickling & Unpickling section below. Figure 8 below shows the method through which serialized (“pickled”) data is de-serialized (“unpickled”) and imported back into memory.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f08.png)
+![alt text](/images/f08.png)
 
 *Figure 8. Method for data de-serialization and import*
 
 The next method in the Processor class is analyzePerformance, which performs airplane performance analysis on data in list form. The actual analysis performed on the data is rudimentary and not intended to meet the objectives of the assignment. However, structured error handling is incorporated in this method in an attempt to preclude expected errors. This is covered in more detail in the Structured Error Handling section below. Figure 9 below shows analyzePerformance method.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f09.1.png)
+![alt text](/images/f09.1.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f09.2.png)
+![alt text](/images/f09.2.png)
 
 *Figure 9. Method to analyze data*
 
 The method to display data from memory is very similar to previous assignments, so is not discussed in detail here. Figure 10 below shows the method that displays data from memory.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f10.png)
+![alt text](/images/f10.png)
 
 *Figure 10. Method to display data from memory*
 
@@ -106,7 +106,7 @@ The method to display data from memory is very similar to previous assignments, 
 
 The main body of the script resembles that of Assignment 06 to an extent. It begins with the loading of data from a text file using a method from the Processor class. Then a while loop is initiated; at the beginning of each iteration, the main menu is displayed to the user and their response is recorded. This recorded response is fed into an if-elif-else statement, through which the correct corresponding method is called and the results produced. The novelty in this script lies in the called functions, which are discussed previously and in the next two sections; thus, no further discussion of the main body is warranted. Figure 11 below shows the main body of the script.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f11.png)
+![alt text](/images/f11.png)
 
 *Figure 11. Main body of script*
 
@@ -114,7 +114,7 @@ The main body of the script resembles that of Assignment 06 to an extent. It beg
 
 As alluded to in the Processing section above, this script makes use of pickling and unpickling (i.e., data serialization and de-serialization). In the theoretical use case for this script, flight parameter data is received in the form of a text file directly from the flight recorder. (In all likelihood such data would already be serialized, but this is ignored here for the purposes of illustration). Unlike the example data provided, real life flight parameter data can consist of hundreds of columns and millions of rows; serialization of such data would thus be useful to reduce file sizes. Figure 2 above shows how tabulated data may be received or generated; for persistent, reduced size storage, it would be useful for this to be serialized as binary data (i.e., “pickled”). Using the code in Figure 7, the data in Figure 2 can be serialized and then saved persistently as a file. Figure 12 below shows the resultant binary data file after the data in Figure 2 is serialized and saved.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f12.png)
+![alt text](/images/f12.png)
 
 *Figure 12. Result of serializing and saving flight data from Figure 2 as binary data*
 
@@ -122,9 +122,9 @@ As expected, the data has been obscured following serialization. As can be seen 
 
 If instead serialized data was received for analysis purposes, the importBinaryData shown in Figure 8 can be called to “unpickle” the data and read it into memory, overwriting the existing data object. Figure 13 below illustrates such an example. Here, the initial flight data (see Figure 2) is deleted from the directory. This prompts the program to generate largely empty data (zeros for parameters and Static for flight phase). When the user elects to import data (i.e., “unpickle” and load data), it can be seen that the binary data file has been “unpickled” and passed into the flight data variable. As can be seen in these two examples, pickling and unpickling can be of substantial use in data handling. 
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f13.1.png)
+![alt text](/images/f13.1.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f13.2.png)
+![alt text](/images/f13.2.png)
 
 *Figure 13. De-serialization of binary data and loading into memory for processing*
 
@@ -134,7 +134,7 @@ Structured error handling is utilized in a few instances throughout the script. 
 
 Structured error handling is again used in the performance analysis method (analyzePerformance) in the Processor class. The first instance arises when the user elects to calculate flight time. If it is determined that airplane never took off and/or never landed, then the flight time calculation would yield a TypeError due to a one or more non-numbers being subtracted from each other. Depending on which case (never took off and/or never landed), an exception is raised via the testing of a variable; and if statement in the exception statement then filters which response to send the user, informing them of the data’s unsuitability. See Figure 14 for the results of this structured error handling.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f14.png)
+![alt text](/images/f14.png)
 
 *Figure 14. Result of structured error handling when running analysis on faulty data*
 
@@ -148,25 +148,25 @@ As the implementation of pickling/unpickling and structured error handling are d
 
 First is the trivial case: when the necessary data text file is present, the data can be pickled, and analysis performed without error. Figure 15 below shows the preconditions for this case, with a valid flight_data.txt file, but no binary .dat file.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f15.png)
+![alt text](/images/f15.png)
 
 *Figure 15. Trivial case preconditions*
 
 Figure 16 below shows execution of the script in a PyCharm console printout. First, the data is displayed to demonstrate successful loading from text file (see Figure 2 for default data). Next, the user selects to export (serialize and save) the data (see Figure 12 for serialization results). The user then elects to perform an analysis, with the expected results displayed. The program is then exited. Figure 17 shows the same being performed in the command module. Figure 18 shows the resulting binary data file (flightData.dat) saved in the folder.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f16.1.png)
+![alt text](/images/f16.1.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f16.2.png)
+![alt text](/images/f16.2.png)
 
 *Figure 16. Trivial case running in PyCharm*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f17.1.png)
+![alt text](/images/f17.1.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f17.2.png)
+![alt text](/images/f17.2.png)
 
 *Figure 17. Trivial case running in command window*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f18.png)
+![alt text](/images/f18.png)
 
 *Figure 18. Trivial case binary data saved in folder*
 
@@ -174,25 +174,25 @@ Figure 16 below shows execution of the script in a PyCharm console printout. Fir
 
 The second case focuses on unpickling. In this instance, the pickled data .dat file is present, but no flight_data.txt file is to be found. The program begins by failing to load data from a non-existent text file. Instead, the program creates filler data that is displayed by the user. Binary data (see Figure 12) is unpickled and loaded; the imported data is displayed. Analysis is then successfully performed. Figure 19 below shows the preconditions, Figure 20 below shows the script running in PyCharm via a console printout, and Figure 21 below shows the script running in command window.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f19.png)
+![alt text](/images/f19.png)
 
 *Figure 19. Unpickling case preconditions*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f20.1.png)
+![alt text](/images/f20.1.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f20.2.png)
+![alt text](/images/f20.2.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f20.3.png)
+![alt text](/images/f20.3.png)
 
 *Figure 20. Unpickling case running in PyCharm*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f21.1.png)
+![alt text](/images/f21.1.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f21.2.png)
+![alt text](/images/f21.2.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f21.3.png)
+![alt text](/images/f21.3.png)
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f21.4.png)
+![alt text](/images/f21.4.png)
 
 *Figure 21. Unpickling case running in command window*
 
@@ -200,15 +200,15 @@ The second case focuses on unpickling. In this instance, the pickled data .dat f
 
 The final case focuses on structured error handling. In this case, the necessary flight_data.txt file is present, but contains faulty data (no Takeoff is recorded). In this case, the data is read from the text file and analysis attempted. However, the program recognizes a fault in the data and informs the user of the issue before returning to the menu. Figure 22 below shows the faulty data (note no Takeoff Roll), Figure 23 below shows the case running in PyCharm, and Figure 24 shows the case running in command window.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f22.png)
+![alt text](/images/f22.png)
 
 *Figure 22. Error handling case erroneous data*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f23.png)
+![alt text](/images/f23.png)
 
 *Figure 23. Error handling case running in PyCharm*
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f24.png)
+![alt text](/images/f24.png)
 
 *Figure 24. Error handling case running in command window*
 
