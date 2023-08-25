@@ -6,9 +6,9 @@
 
 **Course:** 	IT FDN 110 A
 
-**GitHub URL:**	https://github.com/mqadri22/IntroToProg-Python-Mod07 
+**GitHub URL:**	[https://github.com/mqadri22/IntroToProg-Python-Mod07](https://github.com/mqadri22/IntroToProg-Python-Mod07)
 
-**GitHub Site:**	https://mqadri22.github.io/IntroToProg-Python-Mod07/ 
+**GitHub Site:**	[https://mqadri22.github.io/IntroToProg-Python-Mod07/](https://mqadri22.github.io/IntroToProg-Python-Mod07/)
 
 ## Introduction
 
