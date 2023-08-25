@@ -34,7 +34,7 @@ The Data Declaration portion of the script consists of the declaration of variab
 
 Before the variables are declared, however, code is imported from two different sets of files: pickle and os.path. pickle is imported to handle the pickling/unpickling portion of the assignment, whereas os.path enables use of methods later on that pertain to file paths. Figure 1 below shows the importation of these two packages.
 
-![alt text](https://github.com/mqadri22/IntroToProg-Python-Mod07/blob/main/docs/images/f01.png)
+![alt text](/images/f01.png)
 
 *Figure 1. Importation of code from other files*
 
